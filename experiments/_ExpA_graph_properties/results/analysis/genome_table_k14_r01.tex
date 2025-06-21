@@ -1,0 +1,60 @@
+\begin{table}[ht]
+\centering
+\caption{Genome \(G\) of a successful individual evolved for the K14\_R01 target. The genome encodes spatial, chemical, and behavioral parameters used by the developmental automaton.}
+\label{tab:genome_k14_r01}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ll}
+\toprule
+\textbf{Component} & \textbf{Values} \\
+\midrule
+\textbf{G\textsubscript{dim}} & \(L_x = 20,\quad L_y = 18\) \\
+\textbf{G\textsubscript{iter}} & 200 \\
+\midrule
+\textbf{G\textsubscript{morph}}: Morphogens & 3 types \\
+\quad Progenitor secretion rates & [0.486, 0.444, 0.045] \\
+\quad Neuron secretion rates & [0.161, 0.208, 0.247] \\
+\quad Inhibition matrix &
+\(\begin{bmatrix}
+0.000 & 0.000 & 0.281 \\
+0.000 & 0.000 & 0.000 \\
+0.000 & 0.000 & 0.169
+\end{bmatrix}\) \\
+\quad Diffusion coefficients &
+\begin{tabular}[t]{@{}l@{}}
+Morphogen 1: 
+\(\begin{bmatrix}
+0.145 & 0.060 & 0.252 \\
+0.045 & 0.171 & 0.064 \\
+0.155 & 0.042 & 0.066
+\end{bmatrix}\) \\
+Morphogen 2: 
+\(\begin{bmatrix}
+0.116 & 0.033 & 0.134 \\
+0.084 & 0.151 & 0.123 \\
+0.190 & 0.152 & 0.016
+\end{bmatrix}\) \\
+Morphogen 3: 
+\(\begin{bmatrix}
+0.045 & 0.181 & 0.049 \\
+0.165 & 0.078 & 0.143 \\
+0.194 & 0.002 & 0.143
+\end{bmatrix}\) \\
+\end{tabular} \\
+\midrule
+\textbf{G\textsubscript{fates}}: Behavioral thresholds & \\
+\quad Cell division & 0.593 \\
+\quad Differentiation & 0.439 \\
+\quad Axon growth & 0.307 \\
+\midrule
+\textbf{G\textsubscript{axon}}: Axon parameters & \\
+\quad Connection threshold & 0.661 \\
+\quad Max axon length & 7 \\
+\quad Self-connect isolated neurons & 0.014 \\
+\midrule
+Other parameters & \\
+\quad Diffusion rate (global) & 0.140 \\
+\quad Weight adjustment target & 0.553 \\
+\quad Weight adjustment rate & 0.014 \\
+\bottomrule
+\end{tabular}
+\end{table}
