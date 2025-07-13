@@ -1,0 +1,300 @@
+{
+    "generations": 5,
+    "evaluations": 750,
+    "best_fitness": 0.9999999895325983,
+    "elapsed_time": 26.145148992538452,
+    "configuration": {
+        "fitness_function": "GymFitnessFunction",
+        "fitness_threshold": 0.9999999,
+        "mutation_strategy": "AdaptiveMutationStrategy",
+        "base_mutation_strategy": "AggressiveMutationStrategy",
+        "adaptive_min_multiplier": 1,
+        "adaptive_max_multiplier": 2.5,
+        "meta_parameters_strategy": "ExtendedMatrixMutationStrategy",
+        "parents_selection_strategy": {
+            "type": "TournamentSelectionStrategy",
+            "tournament_size": 7,
+            "selection_pressure": 0.2
+        },
+        "steady_state_strategy": {
+            "type": "CombinedSelectionStrategy",
+            "exclude_previous": true,
+            "strategies": [
+                {
+                    "type": "TopDistinctFitnessSelectionStrategy",
+                    "selection_size": 10
+                },
+                {
+                    "type": "TopFitnessSelectionStrategy",
+                    "selection_size": 440
+                }
+            ]
+        },
+        "ga_params": {
+            "population_size": 500,
+            "max_generations": 1000,
+            "grid_size_x": 10,
+            "grid_size_y": 10,
+            "num_morphogens": 3,
+            "max_growth_steps": 200,
+            "mutation_rate": 0.3,
+            "seed": 93837
+        },
+        "fitness_targets": {
+            "env_name": "CartPole-v1",
+            "num_rollouts": 20
+        }
+    },
+    "generations_data": [
+        {
+            "generation": 0,
+            "best_fitness": 0.9999982916827022,
+            "avg_fitness": 0.00971051798462022,
+            "elapsed_time": 6.326653957366943,
+            "evaluations": 500,
+            "distinct_fitness_scores": 60,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 262,
+            "morphogen_distribution": {
+                "3": 500
+            },
+            "mutation_rate": 0.30436974055798244,
+            "mutation_rate_multiplier": 1.0145658018599415
+        },
+        {
+            "generation": 1,
+            "best_fitness": 0.9999982916827022,
+            "avg_fitness": 0.009712665339552156,
+            "elapsed_time": 10.16112208366394,
+            "evaluations": 550,
+            "distinct_fitness_scores": 68,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 262,
+            "morphogen_distribution": {
+                "3": 495,
+                "10": 1,
+                "5": 2,
+                "7": 1,
+                "4": 1
+            },
+            "mutation_rate": 0.30437070686935264,
+            "mutation_rate_multiplier": 1.0145690228978421
+        },
+        {
+            "generation": 2,
+            "best_fitness": 0.9999982916827022,
+            "avg_fitness": 0.010794979661208935,
+            "elapsed_time": 14.02409815788269,
+            "evaluations": 600,
+            "distinct_fitness_scores": 72,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 262,
+            "morphogen_distribution": {
+                "3": 494,
+                "10": 1,
+                "5": 2,
+                "7": 1,
+                "4": 2
+            },
+            "mutation_rate": 0.3048577491461209,
+            "mutation_rate_multiplier": 1.0161924971537364
+        },
+        {
+            "generation": 3,
+            "best_fitness": 0.9999982916827022,
+            "avg_fitness": 0.011624481586833605,
+            "elapsed_time": 18.000993013381958,
+            "evaluations": 650,
+            "distinct_fitness_scores": 81,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 262,
+            "morphogen_distribution": {
+                "3": 497,
+                "5": 1,
+                "4": 2
+            },
+            "mutation_rate": 0.30523102565032667,
+            "mutation_rate_multiplier": 1.0174367521677556
+        },
+        {
+            "generation": 4,
+            "best_fitness": 0.9999982916827022,
+            "avg_fitness": 0.013438897230033215,
+            "elapsed_time": 21.970329761505127,
+            "evaluations": 700,
+            "distinct_fitness_scores": 88,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 262,
+            "morphogen_distribution": {
+                "3": 497,
+                "5": 2,
+                "4": 1
+            },
+            "mutation_rate": 0.30604751408458786,
+            "mutation_rate_multiplier": 1.0201583802819596
+        },
+        {
+            "generation": 5,
+            "best_fitness": 0.9999999895325983,
+            "avg_fitness": 0.01559273156025873,
+            "elapsed_time": 26.01733088493347,
+            "evaluations": 750,
+            "distinct_fitness_scores": 93,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 100,
+            "inputs": 0,
+            "connections": 383,
+            "morphogen_distribution": {
+                "3": 493,
+                "5": 2,
+                "4": 1,
+                "6": 2,
+                "11": 1,
+                "7": 1
+            },
+            "mutation_rate": 0.30701672927556334,
+            "mutation_rate_multiplier": 1.0233890975852111
+        }
+    ],
+    "best_genome_data": {
+        "max_growth_steps": 200,
+        "size_x": 10,
+        "size_y": 10,
+        "diffusion_rate": 0.13053969304802562,
+        "num_morphogens": 3,
+        "division_threshold": 0.5228267957638835,
+        "cell_differentiation_threshold": 0.5103724203597181,
+        "axon_growth_threshold": 0.31106847030464985,
+        "max_axon_length": 8,
+        "axon_connect_threshold": 0.7005012477646291,
+        "self_connect_isolated_neurons_fraction": 0.03129474975472678,
+        "weight_adjustment_target": 0.5652573273274075,
+        "weight_adjustment_rate": 0.013090702670153914,
+        "progenitor_secretion_rates": [
+            0.4301533755954501,
+            0.3606085525599386,
+            0.2993685197055507
+        ],
+        "neuron_secretion_rates": [
+            0.061118846720285336,
+            0.2966505751241045,
+            0.4841722199459337
+        ],
+        "inhibition_matrix": [
+            [
+                0.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                0.22925933220494815
+            ],
+            [
+                0.0,
+                0.23135924069657748,
+                0.0
+            ]
+        ],
+        "diffusion_patterns": [
+            [
+                [
+                    0.029395226387754565,
+                    0.0016361715326664362,
+                    0.1615520187201042
+                ],
+                [
+                    0.25562220536700814,
+                    0.07853053038573483,
+                    0.18412618063791691
+                ],
+                [
+                    0.13811328020779245,
+                    0.0293049384378447,
+                    0.12171944832317774
+                ]
+            ],
+            [
+                [
+                    0.21362485938325598,
+                    0.06578232236141165,
+                    0.0036553976118996567
+                ],
+                [
+                    0.08519890765592339,
+                    0.14526734632523813,
+                    0.07949871543417435
+                ],
+                [
+                    0.10991057534507458,
+                    0.1459127465984898,
+                    0.15114912928453247
+                ]
+            ],
+            [
+                [
+                    0.14805718452445008,
+                    0.1229389361500454,
+                    0.14770953830996453
+                ],
+                [
+                    0.13435027309242353,
+                    0.11748852422249174,
+                    0.15221746831070904
+                ],
+                [
+                    0.12614143016948406,
+                    0.03289814599373037,
+                    0.01819849922670128
+                ]
+            ]
+        ]
+    }
+}

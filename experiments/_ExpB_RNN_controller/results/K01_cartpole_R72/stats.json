@@ -1,0 +1,168 @@
+{
+    "generations": 0,
+    "evaluations": 500,
+    "best_fitness": 0.9999999999999432,
+    "elapsed_time": 7.1249001026153564,
+    "configuration": {
+        "fitness_function": "GymFitnessFunction",
+        "fitness_threshold": 0.9999999,
+        "mutation_strategy": "AdaptiveMutationStrategy",
+        "base_mutation_strategy": "AggressiveMutationStrategy",
+        "adaptive_min_multiplier": 1,
+        "adaptive_max_multiplier": 2.5,
+        "meta_parameters_strategy": "ExtendedMatrixMutationStrategy",
+        "parents_selection_strategy": {
+            "type": "TournamentSelectionStrategy",
+            "tournament_size": 7,
+            "selection_pressure": 0.2
+        },
+        "steady_state_strategy": {
+            "type": "CombinedSelectionStrategy",
+            "exclude_previous": true,
+            "strategies": [
+                {
+                    "type": "TopDistinctFitnessSelectionStrategy",
+                    "selection_size": 10
+                },
+                {
+                    "type": "TopFitnessSelectionStrategy",
+                    "selection_size": 440
+                }
+            ]
+        },
+        "ga_params": {
+            "population_size": 500,
+            "max_generations": 1000,
+            "grid_size_x": 10,
+            "grid_size_y": 10,
+            "num_morphogens": 3,
+            "max_growth_steps": 200,
+            "mutation_rate": 0.3,
+            "seed": 967795
+        },
+        "fitness_targets": {
+            "env_name": "CartPole-v1",
+            "num_rollouts": 20
+        }
+    },
+    "generations_data": [
+        {
+            "generation": 0,
+            "best_fitness": 0.9999999999999432,
+            "avg_fitness": 0.022461007907279954,
+            "elapsed_time": 7.052025079727173,
+            "evaluations": 500,
+            "distinct_fitness_scores": 57,
+            "distinct_genomes": 500,
+            "dimensions": [
+                10,
+                10
+            ],
+            "max_steps": 200,
+            "morphogens": 3,
+            "neurons": 46,
+            "inputs": 1,
+            "connections": 146,
+            "morphogen_distribution": {
+                "3": 500
+            },
+            "mutation_rate": 0.3101074535582765,
+            "mutation_rate_multiplier": 1.0336915118609218
+        }
+    ],
+    "best_genome_data": {
+        "max_growth_steps": 200,
+        "size_x": 10,
+        "size_y": 10,
+        "diffusion_rate": 0.06605577947000724,
+        "num_morphogens": 3,
+        "division_threshold": 0.683888853809056,
+        "cell_differentiation_threshold": 0.6716749496389969,
+        "axon_growth_threshold": 0.45305736230754307,
+        "max_axon_length": 9,
+        "axon_connect_threshold": 0.5543349786270628,
+        "self_connect_isolated_neurons_fraction": 0.025019346035530465,
+        "weight_adjustment_target": 0.654732329210272,
+        "weight_adjustment_rate": 0.018786103336696874,
+        "progenitor_secretion_rates": [
+            0.292117474045137,
+            0.47938421263988346,
+            0.09275737582969917
+        ],
+        "neuron_secretion_rates": [
+            0.4757556732138512,
+            0.16264285075913776,
+            0.4152103117767023
+        ],
+        "inhibition_matrix": [
+            [
+                0.0,
+                0.0,
+                0.03254578243371781
+            ],
+            [
+                0.38311130090117357,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                0.0
+            ]
+        ],
+        "diffusion_patterns": [
+            [
+                [
+                    0.12006112172696387,
+                    0.1068870300175656,
+                    0.032635221058417915
+                ],
+                [
+                    0.10070088174811474,
+                    0.09089871899025279,
+                    0.07904061799100733
+                ],
+                [
+                    0.19725587634054836,
+                    0.12359626775176244,
+                    0.14892426437536713
+                ]
+            ],
+            [
+                [
+                    0.21878413346400732,
+                    0.01920575419924113,
+                    0.0640184899268098
+                ],
+                [
+                    0.10300953888709066,
+                    0.1224196846772395,
+                    0.14880263296354154
+                ],
+                [
+                    0.0030804598047894393,
+                    0.13301127982891997,
+                    0.18766802624836054
+                ]
+            ],
+            [
+                [
+                    0.057508358906379085,
+                    0.11579545708352554,
+                    0.025082197999128582
+                ],
+                [
+                    0.11547668080219078,
+                    0.11760370288752071,
+                    0.1416922658246243
+                ],
+                [
+                    0.12199467287553802,
+                    0.15328036624570346,
+                    0.15156629737538946
+                ]
+            ]
+        ]
+    }
+}
