@@ -1,3 +1,8 @@
+Dear Sergii, i've tried reaching you via email, but to no success. So im trying via github.
+I'm a bioinformatician and for my master thesis i've done something almost 100% similar. If you want, i can send you my thesis.
+my email is yannick.kiefl@tum.de
+
+
 # MorphoNAS: Embryogenic Neural Architecture Search Through Morphogen-Guided Development
 
 [![arXiv](https://img.shields.io/badge/arXiv-2507.13785-b31b1b.svg)](https://arxiv.org/abs/2507.13785)
